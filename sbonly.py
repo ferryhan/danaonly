@@ -43,7 +43,7 @@ meM = me.profile.mid
 meProfile = me.getProfile()
 meSettings = me.getSettings()
 oepoll = OEPoll(me)
-Owner = PrankBots["u90ffebff8c340434bd477ba4b56b8882"]
+Owner = PrankBots["owner"]
 Stiles = "│○"
 respontags = {
     "Auto_text": "\nYes I'am Here"
