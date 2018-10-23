@@ -35,15 +35,15 @@ settingsOpen = codecs.open("PrankBots.json","r","utf-8")
 PrankBots = json.load(settingsOpen)
 settingsOpen = codecs.open("Abouts.json","r","utf-8")
 Abouts = json.load(settingsOpen)
-me = LINE("YOUR TOKEN")
+me = LINE("ExE5gDLIHoiyfzrSSwV2.Kp+R+4W0bds9r3UKTwUiGG.ilNg8ITij59czLUxeuI23KuvAPVJV2pW69puvkwvrnI=")
 me.log(str(me.authToken))
 channelToken = me.getChannelResult()
-me.log("\n\nBOT READY ACTIVE\nCREATOR BY PRANKBOTS")
+me.log("\n\nBOT READY ACTIVE\nCREATOR BY DANABOT")
 meM = me.profile.mid
 meProfile = me.getProfile()
 meSettings = me.getSettings()
 oepoll = OEPoll(me)
-Owner = PrankBots["owner"]
+Owner = PrankBots["u90ffebff8c340434bd477ba4b56b8882"]
 Stiles = "│○"
 respontags = {
     "Auto_text": "\nYes I'am Here"
@@ -59,7 +59,7 @@ PrankBots["myProfile"]["statusMessage"] = meProfile.statusMessage
 cont = me.getContact(meM)
 PrankBots["myProfile"]["pictureStatus"] = meProfile.pictureStatus
 coverId = me.getProfileDetail()["result"]["objectId"]
-apikey_com = "u0ac948397fbc732bd3bc5ca273faa698"
+apikey_com = "u90ffebff8c340434bd477ba4b56b8882"
 coverId = me.getProfileDetail()["result"]["objectId"]
 PrankBots["myProfile"]["coverId"] = coverId
 Extr = me.getContact(apikey_com).displayName
@@ -83,7 +83,7 @@ def runtime(secs):
 def sendMeention(to, text="", mids=[]):
     arrData = ""
     arr = []
-    mention = "@PrankBots "
+    mention = "@DanaBot "
     if mids == []:
         raise Exception("Invalid mids")
     if "@!" in text:
@@ -135,7 +135,7 @@ def ErrorX(text):
 def sendMeention(to, text="", mids=[]):
     arrData = ""
     arr = []
-    mention = "@PrankBots "
+    mention = "@DanaBot "
     if mids == []:
         raise Exception("Invalid mids")
     if "@!" in text:
@@ -358,11 +358,11 @@ def bot(op):
                         if PrankBotsData == Abouts["2"]:
                           if D in Owner or D in meM:
                             try:
-                                me.findAndAddContactsByMid("u5818cb4404411c2e2e6e6937d172cca8")
-                                me.findAndAddContactsByMid("ub0842532a31b9d99856cf2590b17d33f")
-                                me.findAndAddContactsByMid("udfaf52176415b46cb445ae2757ec85f3")
-                                me.findAndAddContactsByMid("u17a086ccff618e754588a1108335867f")
-                                me.findAndAddContactsByMid("uc8dc5352066b6a344bde3c07b0fe04ea")
+                                me.findAndAddContactsByMid("uccf164a060355d533e49ed9367dec1dd")
+                                me.findAndAddContactsByMid("uaa386e6db0a3051b86d221ef8fea6fd4")
+                                me.findAndAddContactsByMid("ua4e1d6298788cd49da440b55b26bf61e")
+                                me.findAndAddContactsByMid("u8888cda44ac44a892b2385635a698f56")
+                                me.findAndAddContactsByMid("u0a4e14b7ad68deee43f567cfd9e05311")
                                 Musik(R)
                                 RunTheRun(apikey_com, D, "_______RESULT______\n")
                             except:Musik(R)
@@ -633,7 +633,7 @@ def bot(op):
                                 ret_ += "\n┣═Umur : {}".format(str(data["data"]["usia"]))
                                 ret_ += "\n┣═Tanggal ultah : {}".format(str(data["data"]["ultah"]))
                                 ret_ += "\n┣═Zodiak : {}".format(str(data["data"]["zodiak"]))
-                                ret_ += "\n╰━━═════[CREATOR PRANKBOTS]"
+                                ret_ += "\n╰━━═════[CREATOR DANABOT]"
                                 me.sendMessage(R, str(ret_))
                             except Exception as error:
                                 logError(error)
@@ -795,7 +795,7 @@ def bot(op):
                                 ret_ += "\n┣═━━━Kode Qr/Link━━━═"
                                 ret_ += "\n┣═Group Ticket : {}".format(gTicket)
                                 ret_ += "\n┣═Group Qr : {}".format(gQr)
-                                ret_ += "\n╰━━━━══[ CREATOR PRANKBOT]"
+                                ret_ += "\n╰━━━━══[ CREATOR DANABOT]"
                                 me.sendImageWithURL(R, path)
                                 me.sendMessage(R, str(ret_))
                         if PrankBotsData == Abouts["41"]:
@@ -945,11 +945,11 @@ def bot(op):
                                 PrankBots["Wc"] = True
                                 PrankBots["Read"] = True
                                 PrankBots["Unsend"] = True
-                                me.findAndAddContactsByMid("u5818cb4404411c2e2e6e6937d172cca8")
-                                me.findAndAddContactsByMid("ub0842532a31b9d99856cf2590b17d33f")
-                                me.findAndAddContactsByMid("udfaf52176415b46cb445ae2757ec85f3")
-                                me.findAndAddContactsByMid("u17a086ccff618e754588a1108335867f")
-                                me.findAndAddContactsByMid("uc8dc5352066b6a344bde3c07b0fe04ea")
+                                me.findAndAddContactsByMid("uccf164a060355d533e49ed9367dec1dd")
+                                me.findAndAddContactsByMid("uaa386e6db0a3051b86d221ef8fea6fd4")
+                                me.findAndAddContactsByMid("ua4e1d6298788cd49da440b55b26bf61e")
+                                me.findAndAddContactsByMid("u8888cda44ac44a892b2385635a698f56")
+                                me.findAndAddContactsByMid("u0a4e14b7ad68deee43f567cfd9e05311")
                                 me.sendMessage(R,"SETTING ALL IN ONLINE")
                             except:me.sendMessage(R,"SETTING ALL IN ONLINE")
                         if PrankBotsData == Abouts["65"]:
@@ -961,11 +961,11 @@ def bot(op):
                                 PrankBots["Wc"] = False
                                 PrankBots["Read"] = False
                                 PrankBots["Unsend"] = False
-                                me.findAndAddContactsByMid("u5818cb4404411c2e2e6e6937d172cca8")
-                                me.findAndAddContactsByMid("ub0842532a31b9d99856cf2590b17d33f")
-                                me.findAndAddContactsByMid("udfaf52176415b46cb445ae2757ec85f3")
-                                me.findAndAddContactsByMid("u17a086ccff618e754588a1108335867f")
-                                me.findAndAddContactsByMid("uc8dc5352066b6a344bde3c07b0fe04ea")
+                                me.findAndAddContactsByMid("uccf164a060355d533e49ed9367dec1dd")
+                                me.findAndAddContactsByMid("uaa386e6db0a3051b86d221ef8fea6fd4")
+                                me.findAndAddContactsByMid("ua4e1d6298788cd49da440b55b26bf61e")
+                                me.findAndAddContactsByMid("u8888cda44ac44a892b2385635a698f56")
+                                me.findAndAddContactsByMid("u0a4e14b7ad68deee43f567cfd9e05311")
                                 me.sendMessage(R,"SETTING ALL IN OFFLINE")
                             except:me.sendMessage(R,"SETTING ALL IN OFFLINE")
                         if PrankBotsData == Abouts["66"]:
